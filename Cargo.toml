@@ -27,7 +27,7 @@ tracing-appender.workspace = true
 tracing-subscriber.workspace = true
 sha2 = "0.10"
 hex = "0.4"
-clap = { version = "4.5.21", features = ["derive"] }
+clap = { version = "4.5.27", features = ["derive"] }
 
 
 [workspace]
@@ -47,10 +47,10 @@ context = { path = "crates/context" }
 config = { path = "crates/config" }
 router = { path = "crates/router" }
 
-tokio = { version = "1.41.0", features = ["full"] }
+tokio = { version = "1.43.0", features = ["full"] }
 tokio-tungstenite = { version = "0.24.0", features = ["native-tls"] }
 axum = { version = "0.7.7", features = ["macros", "ws"] }
-reqwest = { version = "0.12.8", features = [
+reqwest = { version = "0.12.12", features = [
     "json",
     "multipart",
     "stream",
@@ -64,8 +64,8 @@ tracing = "0.1.40"
 tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }
 tracing-appender = "0.2.3"
 
-serde = { version = "1.0.214", features = ["derive"] }
-serde_json = "1.0.132"
+serde = { version = "1.0.217", features = ["derive"] }
+serde_json = "1.0.137"
 chrono = { version = "0.4.19", features = ["serde"] }
 dotenvy = "0.15.7"
 
